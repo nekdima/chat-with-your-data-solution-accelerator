@@ -59,6 +59,7 @@ resource appService 'Microsoft.Web/sites@2022-03-01' = {
         allowedOrigins: union([ 'https://portal.azure.com', 'https://ms.portal.azure.com' ], allowedOrigins)
       }
     }
+    publicNetworkAccess: 'Disabled'
     clientAffinityEnabled: clientAffinityEnabled
     httpsOnly: true
   }
