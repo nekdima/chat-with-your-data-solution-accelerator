@@ -1,0 +1,23 @@
+{"code": "DeploymentScriptOperationFailed",
+"message": "Resource 'usf6akdrnvvnkazscripts' was disallowed by policy. Reasons: 'Public network access must be disabled for PaaS services.'. See error details for policy resource IDs."
+}
+
+
+{
+    "code": "DeploymentFailed",
+    "target": "/subscriptions/cfea5268-c98d-45c6-bad4-a96ee8a1210c/resourceGroups/rg-marketing-chatbot/providers/Microsoft.Resources/deployments/marketing-chatbot-backend-bynamfnyfomoy",
+    "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.",
+    "details": [
+      {
+        "code": "ResourceDeploymentFailure",
+        "target": "/subscriptions/cfea5268-c98d-45c6-bad4-a96ee8a1210c/resourceGroups/rg-marketing-chatbot/providers/Microsoft.Resources/deploymentScripts/WaitFunctionDeploymentSection",
+        "message": "The resource write operation failed to complete successfully, because it reached terminal provisioning state 'failed'.",
+        "details": [
+          {
+            "code": "DeploymentScriptOperationFailed",
+            "message": "Resource 'usf6akdrnvvnkazscripts' was disallowed by policy. Reasons: 'Public network access must be disabled for PaaS services.'. See error details for policy resource IDs."
+          }
+        ]
+      }
+    ]
+  }
